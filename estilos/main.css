@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Caveat:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+.header {
+  position: fixed;
+  height: 8.5rem;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #009DA2;
+  background-size: cover;
+  z-index: 100;
+}
+.header__logo {
+  margin-left: 0.5rem;
+  padding-top: 0.2rem;
+  width: 15rem;
+  position: absolute;
+}
+.header__list {
+  text-align: end;
+  background-color: #009DA2;
+  padding-right: 1rem;
+}
+.header__list .header__item {
+  display: inline-block;
+  margin: 3rem 0.5rem;
+  font-family: Be Vietnam Pro;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.header__list .header__link {
+  text-decoration: none;
+  color: #F0F0F0;
+  transition: color;
+}
+.header__list .header__link:hover {
+  color: #003031;
+}
+
+/*INDEX*/
+.main {
+  height: 50rem;
+  padding: 12rem 0rem 0rem 0rem;
+  background-image: url("../assets/Fondojpg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__div {
+  text-align: center;
+}
+.main__div .main__title {
+  padding: 5rem;
+  font-family: Caveat;
+  font-size: 4rem;
+  color: #F0F0F0;
+}
+.main__div .main__item {
+  padding: 1rem;
+  font-family: Be Vietnam Pro;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #F0F0F0;
+}
+
+/*FOOTER*/
+.footer {
+  height: 6rem;
+  width: 100%;
+  background-color: #009DA2;
+}
+.footer__title {
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+  font-family: Be Vietnam Pro;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #F0F0F0;
+  text-align: center;
+}
+.footer__div {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+.footer__div .div__social {
+  padding: 0.2rem;
+}
+.footer__div .social__icon {
+  display: inline-block;
+  width: 2.2rem;
+  transition: width 0.5s;
+}
+.footer__div .social__icon:hover {
+  width: 2.4rem;
+}
+
+/*TECNICAS*/
+.main__tec {
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+.main__tec .tec__title {
+  text-align: center;
+  font-family: Caveat;
+  font-size: 3rem;
+  color: #009DA2;
+}
+.main__tec .tec__pa {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #009DA2;
+}
+
+.tec__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.article__title {
+  font-family: Be Vietnam Pro;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #009DA2;
+  text-align: center;
+}
+.article__pa {
+  padding: 1rem 2rem 1rem 2rem;
+  font-family: Be Vietnam Pro;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #009DA2;
+  text-align: center;
+}
+.article__img {
+  width: 100%;
+  padding: 1rem;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/*GALERIA*/
+.main__gal {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+.main__gal .gal__divTitle {
+  padding-bottom: 2rem;
+}
+
+.gal__title {
+  text-align: center;
+  font-family: Caveat;
+  font-size: 3rem;
+  color: #009DA2;
+}
+
+#grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 0.7rem;
+       column-gap: 0.7rem;
+  row-gap: 0.7rem;
+  /* animation scale-up-center */
+}
+#grilla .gal__item {
+  width: 100%;
+  align-items: center;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*CONTACTO*/
+.form {
+  padding: 7rem;
+}
+
+.form__title {
+  margin-top: 7rem;
+  font-family: Be Vietnam Pro;
+  font-weight: 400;
+}
+
+.form__lable {
+  font-family: Be Vietnam Pro;
+  font-weight: 200;
+}
+
+.button, .button__enviar, .button__reset {
+  width: 5rem;
+  height: 1.5rem;
+  border-style: none;
+  font-family: Be Vietnam Pro;
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: #F0F0F0;
+  transition: font-size 0.5s;
+}
+
+.button:hover, .button__enviar:hover, .button__reset:hover {
+  font-size: 1rem;
+}
+
+.button__reset {
+  background-color: indianred;
+  border-color: indianred;
+}
+
+.button__enviar {
+  background-color: #009DA2;
+  border-color: #009DA2;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  .header__logo {
+    padding-top: 0.2rem;
+    width: 10rem;
+  }
+
+  .header__list {
+    width: 100%;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+
+  .header__item {
+    width: 100%;
+    margin: 0.5rem;
+    font-family: Be Vietnam Pro;
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
+
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
+    row-gap: 0.7rem;
+  }
+
+  .form__title {
+    margin-top: 12rem;
+  }
+
+  .tec__title {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+  }
+
+  .gal__title {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  .tec__title {
+    font-size: 2rem;
+  }
+
+  .tec__section {
+    flex-direction: column;
+  }
+
+  .gal__title {
+    font-size: 2rem;
+  }
+
+  .form {
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__list {
+    width: 100%;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .header__list .header__item {
+    margin: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .main__title {
+    font-size: 3rem;
+  }
+
+  .main__item {
+    font-size: 1.5rem;
+  }
+
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
+    row-gap: 0.7rem;
+  }
+
+  .tec__title {
+    font-size: 2rem;
+  }
+
+  .gal__title {
+    font-size: 2rem;
+  }
+
+  .form {
+    padding: 4rem;
+  }
+}/*# sourceMappingURL=main.css.map */

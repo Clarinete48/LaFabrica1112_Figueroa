@@ -1,0 +1,36 @@
+ /*FOOTER*/
+
+@mixin sizes ($height, $width) {
+    height: $height;
+    width: $width;  
+}
+
+.footer{
+    @include sizes(6rem, 100%);
+    background-color: $turquesa;
+    &__title{
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+        font-family: Be Vietnam Pro;
+        font-weight: 200;
+        font-size: 1.2rem;
+        color: $blanco;
+        text-align: center;
+    }
+    &__div{
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        .div__social{
+            padding: 0.2rem;
+        }
+        .social__icon{
+            display: inline-block;
+            width: 2.2rem;
+            transition: width 0.5s;
+        }
+        .social__icon:hover{
+            width: 2.4rem;
+        }
+    }
+}
