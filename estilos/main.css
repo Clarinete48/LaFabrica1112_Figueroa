@@ -123,13 +123,19 @@
 }
 
 .tec__section {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   width: 100%;
   padding: 1rem;
 }
 
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .article__title {
   font-family: Be Vietnam Pro;
   font-weight: 400;
@@ -296,6 +302,7 @@
   }
 
   .tec__section {
+    display: flex;
     flex-direction: column;
   }
 
@@ -322,6 +329,7 @@
   }
 
   .main__title {
+    padding: 5rem 1rem;
     font-size: 3rem;
   }
 

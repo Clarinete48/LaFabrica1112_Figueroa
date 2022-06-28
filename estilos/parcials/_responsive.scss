@@ -54,6 +54,7 @@
 }
     
 .tec__section{
+        display: flex;
         flex-direction: column;
    }
 
@@ -82,6 +83,7 @@
         }
 
      .main__title{
+            padding: 5rem  1rem;
             font-size: 3rem;
         }
 
