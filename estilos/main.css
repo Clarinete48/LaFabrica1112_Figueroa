@@ -6,12 +6,15 @@
 }
 
 /*HEADER*/
+.container-fluid {
+  background-color: #009DA2;
+  background-size: cover;
+}
+
 .header {
   position: fixed;
   height: 8.5rem;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #009DA2;
   background-size: cover;
   z-index: 100;
@@ -20,16 +23,15 @@
   margin-left: 0.5rem;
   padding-top: 0.2rem;
   width: 15rem;
-  position: absolute;
 }
 .header__list {
-  text-align: end;
+  text-align: center;
   background-color: #009DA2;
   padding-right: 1rem;
 }
 .header__list .header__item {
   display: inline-block;
-  margin: 3rem 0.5rem;
+  margin: 1rem 0.5rem;
   font-family: Be Vietnam Pro;
   font-weight: 200;
   font-size: 0.8rem;
@@ -125,9 +127,7 @@
 .tec__section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
   width: 100%;
-  padding: 1rem;
 }
 
 .article {
@@ -152,8 +152,8 @@
   text-align: center;
 }
 .article__img {
-  width: 100%;
   padding: 1rem;
+  width: 100%;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -252,25 +252,7 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
   .header__logo {
-    padding-top: 0.2rem;
-    width: 10rem;
-  }
-
-  .header__list {
-    width: 100%;
-    padding-top: 6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    text-align: center;
-  }
-
-  .header__item {
-    width: 100%;
-    margin: 0.5rem;
-    font-family: Be Vietnam Pro;
-    font-weight: 200;
-    font-size: 0.8rem;
+    width: 12rem;
   }
 
   #grilla {
@@ -287,16 +269,18 @@
   }
 
   .tec__title {
-    margin-top: 6rem;
     font-size: 2.5rem;
   }
 
   .gal__title {
-    margin-top: 6rem;
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 590px) {
+  .header__logo {
+    width: 10rem;
+  }
+
   .tec__title {
     font-size: 2rem;
   }
@@ -315,25 +299,11 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .header__list {
-    width: 100%;
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-  }
-  .header__list .header__item {
-    margin: 0.5rem 0.5rem;
-    font-size: 0.7rem;
-  }
-
   .main__title {
-    padding: 5rem 1rem;
     font-size: 3rem;
+    padding: 5rem 1rem;
   }
-
-  .main__item {
+  .main__title__item {
     font-size: 1.5rem;
   }
 
@@ -356,5 +326,10 @@
 
   .form {
     padding: 4rem;
+  }
+
+  .form__title {
+    margin-top: 15rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

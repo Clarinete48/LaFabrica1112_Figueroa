@@ -3,26 +3,10 @@
  @media screen and (max-width: 768px) {
 
     .header__logo{
-        padding-top: 0.2rem;
-        width: 10rem;
+        width: 12rem;
  }
     
-    .header__list{
-        width: 100%;
-        padding-top: 6rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        text-align: center;
-}
-    
-    .header__item{
-        width: 100%;
-        margin: 0.5rem;
-        font-family: Be Vietnam Pro;
-        font-weight: 200;
-        font-size: 0.8rem;
-}
+
 
     #grilla{
         display: grid;
@@ -37,17 +21,19 @@
     }
 
     .tec__title{
-        margin-top: 6rem;
         font-size: 2.5rem;
     }
 
     .gal__title{
-        margin-top: 6rem;
         font-size: 2.5rem;
     }
  }
 
 @media screen and (max-width: 590px) {
+
+.header__logo{
+        width: 10rem;
+ }
     
 .tec__title{
         font-size: 2rem;
@@ -62,34 +48,22 @@
         font-size: 2rem;
 }
 
-   .form{
+.form{
         padding: 5rem;
 }
 }
 
 @media screen and (max-width: 425px) {
 
-    .header__list{
-        width: 100%;
-        padding-top: 5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        text-align: center;
-        .header__item{
-           margin: 0.5rem 0.5rem;
-           font-size: 0.7rem;   
-    }
-        }
 
      .main__title{
-            padding: 5rem  1rem;
             font-size: 3rem;
+            padding: 5rem  1rem;
+            &__item{
+                    font-size: 1.5rem;
+                }
         }
 
-    .main__item{
-            font-size: 1.5rem;
-        }
     
     #grilla{
         display: grid;
@@ -109,4 +83,10 @@
     .form{
         padding: 4rem;
     }
+
+    .form__title {
+        margin-top: 15rem;
+        font-size: 1rem;
+    }
 }
+

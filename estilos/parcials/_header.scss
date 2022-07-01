@@ -5,11 +5,16 @@
     width: $width;  
 }
 
+
+.container-fluid{
+    background-color:$turquesa;
+    background-size: cover;
+
+}
+
 .header{
     position: fixed;
     @include sizes(8.5rem, 100%);
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color:$turquesa;
     background-size: cover;
     z-index: 100;
@@ -17,15 +22,14 @@
         margin-left: 0.5rem;
         padding-top: 0.2rem;
         width: 15rem;
-        position: absolute;
     }
     &__list{
-        text-align: end;
+        text-align: center;
         background-color: $turquesa;
         padding-right: 1rem;
         .header__item{
             display: inline-block;
-            margin: 3rem 0.5rem;
+            margin: 1rem 0.5rem;
             font-family: Be Vietnam Pro;
             font-weight: 200;
             font-size: 0.8rem;
